@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">        
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    
+    <main>
+        <div id="game">
+            <div class="container" id="userContainer">
+                <h2>You</h2>
+                <h4 class="score userScore">Score: <span id="userCounter">0</span></h4>
+                <button class="user" id="Rock">
+                    <img src="./assets/userRock.png" alt="cartoon hand in a fist to represent rock">
+                </button>
+                <button class="user" id="Paper"><img src="./assets/userPaper.png" alt="cartoon hand spread out to represent paper"></button>
+                <button class="user" id="Scissors"><img src="./assets/userScissors.png" alt="cartoon hand holding two fingers up to represent scissors"></button>
+            </div>
+
+            <div class="container" id="compContainer">
+                <h2>Computer</h2>
+                <h4 class="score compScore">Score: <span id="compCounter">0</span></h4>
+                <img class="computer Rock" src="./assets/computerRock.png" alt="cartoon hand in a fist to represent rock"/>
+                <img class="computer Paper" src="./assets/computerPaper.png" alt="cartoon hand spread out to represent paper">
+                <img class="computer Scissors" src="./assets/computerScissors.png" alt="cartoon hand holding two fingers up to represent scissors">
+            </div>
+        </div>
+
+        <div id="prompt">
+            <h3 id="weapon">Choose your weapon.</h3>
+        </div>
+
+        <div id="popup">
+            <h3 id="result">Result goes here.</h3>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </main>
+
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> 
+    <script src="./script.js"></script>
+    
+</body>
+
+<footer>
+    Created by Natalie Tso at Juno College
+</footer>
+</html>
